@@ -1,3 +1,27 @@
 body{
     font-family: "Raleway";
     }
+.navigation{
+    float: right;
+}
+li{
+    display: inline;
+    padding: 20px;
+}
+li :hover{
+    border-top: 2px;
+    border-top-color: #0065FC;
+    border-top-style: solid;
+    color: #0065FC;
+    padding-top: 10px;
+}
+li :link{
+    text-decoration: none;
+
+}
+.logo{
+    width: 161.09px;
+    height: 79px;
+    padding: 30px, 50px, 30px, 50px;
+    gap: 10px;
+}
