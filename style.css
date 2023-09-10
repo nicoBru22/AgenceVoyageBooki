@@ -5,7 +5,7 @@ body{
     float: right;
 }
 li{
-    display: inline;
+    display: inline; 
     padding: 20px;
 }
 li :hover{
@@ -24,4 +24,36 @@ li :link{
     height: 79px;
     padding: 30px, 50px, 30px, 50px;
     gap: 10px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+#boutonRechercher{
+    width: Hug (132px);
+    height: 49px;
+    padding: 15px 16px 15px 16px;
+    border-radius: 0px 15px 15px 0px;
+    border: 1px;
+    gap: 10px;
+    background-color: #0065FC;
+    color: #FFFFFF;
+}
+#localisation{
+    width: 50px;
+    height: 49px;
+    border-radius: 15px 0px 0px 15px;
+    border: 1px;
+    background: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+#barreRecherche{
+    height: 49px;
+    border: 1px solid #F2F2F2;
+    text-align: center;
 }
