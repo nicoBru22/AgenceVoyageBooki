@@ -88,3 +88,8 @@ li :link{
 .boutonFiltre:hover{
 background-color: #DEEBFF;
 }
+.formulaire{
+    display: flex;
+    flex-direction: row;
+}
+
