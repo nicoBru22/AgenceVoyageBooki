@@ -1,5 +1,5 @@
 body{
-    font-family: "Raleway";
+    font-family: "Raleway"; /*met la police RALEWAY pour toute la page*/
     }
 .navigation{
     float: right;
@@ -56,4 +56,181 @@ li :link{
     height: 49px;
     border: 1px solid #F2F2F2;
     text-align: center;
+}
+.barreFiltre{ /*ensemble de la barre de filtre*/
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+.filtres{ /*seulement le mot filtres*/
+    width: 54px;
+    height: 50px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+#imgFiltre{ /*couleur des logo economique, familiale, romantique et nos pepites*/
+    color: #0065FC;
+    margin-right: 5px;
+}
+.boutonFiltre{ /*les 4 boutons de la barre de filtre*/
+    border-radius: 25px;
+    border: 2px;
+    height: Fixed (50px);
+    padding: 15px;
+    border: 2px;
+    border: solid;
+    border-color: #D9D9D9;
+    background-color: #ffffff;
+    margin-left: 15px;
+    font-weight: bold;
+}
+.boutonFiltre:hover{ /* effet survol */
+background-color: #DEEBFF;
+}
+.formulaire{
+    display: flex;
+    flex-direction: row;
+}
+a{ /* toutes les balises <a> */
+    text-decoration: none;
+}
+
+
+
+
+
+.hebergementEtPopulaire{ /*section hebergement et populaire*/
+    display: flex;
+    justify-content: space-between;
+    margin: 40px;
+
+}
+#hebergement{ /* section hebergement*/
+    background-color: #F2F2F2;
+    width: 65%;
+    border-radius: 20px;
+}
+#populaire{ /*section populaire*/
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 32%;
+}
+.carteP{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.carteH{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+
+
+.carteHebergement{
+    border-radius: 20px;
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 25%;
+    margin: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    padding: 5px;
+}
+.carteHebergement img{
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+
+
+}
+.cartePopulaire{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 100%;
+    height : 20%;
+    margin: 20px;
+
+
+}
+.cartePopulaire img{
+    object-fit: cover;
+    float: left;
+    height: 100%;
+    width: 100px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+
+
+
+
+
+
+.titreSection{
+padding: 20px;
+
+}
+.titreCarte{
+    font-weight: bold;
+    size: 16px;
+    width: max-content;
+}
+.card-content{
+    color: black;
+    padding: 10px;
+    margin: 0px;
+    display: inline-block;
+    justify-content: space-between;
+}
+.euro{
+    font-weight:bold;
+}
+.noteCarte{
+    color: #0065FC;
+}
+
+#activite{
+    margin: 40px;
+}
+#carteA{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.carteActivite{
+    width: 23%;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    height: 500px;
+    border-radius: 20px;
+
+
+}
+.carteActivite img{
+    width: 100%;
+    height: 80%;
+    border-top-right-radius: 20px;
+    border-top-left-radius: 20px;
+}
+
+
+
+footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 40px;
+    background-color: #F2F2F2;
+}
+#sectionFooter{
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
