@@ -60,7 +60,7 @@ li :link{
 .barreFiltre{ /*ensemble de la barre de filtre*/
     display: flex;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 25px;
 }
 .filtres{ /*seulement le mot filtres*/
     width: 54px;
@@ -70,7 +70,6 @@ li :link{
     align-items: center;
 }
 #imgFiltre{ /*couleur des logo economique, familiale, romantique et nos pepites*/
-    color: #0065FC;
     margin-right: 5px;
 }
 .boutonFiltre{ /*les 4 boutons de la barre de filtre*/
@@ -91,11 +90,23 @@ background-color: #DEEBFF;
 .formulaire{
     display: flex;
     flex-direction: row;
+    margin-top: 25px;
 }
 a{ /* toutes les balises <a> */
     text-decoration: none;
 }
-
+.fa-solid{
+    color: #0065FC;
+}
+#siteAccueil{
+    margin: 40px;
+}
+#info{
+    margin-top: 20px;
+}
+#titre{
+    margin-bottom: 10px;
+}
 
 
 
@@ -123,7 +134,6 @@ a{ /* toutes les balises <a> */
 }
 .carteH{
     display: flex;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-between;
 }
@@ -132,7 +142,6 @@ a{ /* toutes les balises <a> */
 
 
 .carteHebergement{
-    border-radius: 20px;
     background-color: #FFFFFF;
     border-radius: 20px;
     width: 25%;
@@ -151,19 +160,21 @@ a{ /* toutes les balises <a> */
 .cartePopulaire{
     background-color: #FFFFFF;
     border-radius: 20px;
-    width: 100%;
-    height : 20%;
+    height : 180px;
     margin: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    padding: 5px;
 
 
 }
 .cartePopulaire img{
     object-fit: cover;
     float: left;
-    height: 100%;
-    width: 100px;
-    border-top-left-radius: 5px;
-    border-bottom-left-radius: 5px;
+    height: 180px;
+    width: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 10px;
 }
 
 
@@ -174,18 +185,17 @@ a{ /* toutes les balises <a> */
 
 .titreSection{
 padding: 20px;
+display: flex;
+justify-content: space-between;
 
 }
 .titreCarte{
     font-weight: bold;
-    size: 16px;
-    width: max-content;
+    font-size: 16px;
 }
 .card-content{
     color: black;
     padding: 10px;
-    margin: 0px;
-    display: inline-block;
     justify-content: space-between;
 }
 .euro{
@@ -223,14 +233,16 @@ padding: 20px;
 
 footer{
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
     margin: 40px;
     background-color: #F2F2F2;
 }
 #sectionFooter{
     margin: 15px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+}
+#elementFooter{
+    margin-bottom: 10px;
+}
+.fa-circle-info{
+    margin-right: 10px;
 }

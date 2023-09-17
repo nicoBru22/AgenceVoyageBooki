@@ -21,24 +21,34 @@
       </ul>
   </header>
 
+  <section id="siteAccueil">
+
+    <div id="titreAccueil">
+      <h1 id="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+      <div>En plein centre ville ou en pleine nature</div>
+    </div>
+
     <form class="formulaire">
       <label><i id="localisation" class="fa-solid fa-location-dot "></i></label>
       <div><input id="barreRecherche" type="search" name="search" placeholder="Marseille,France"></div>
       <div><input id="boutonRechercher" type="submit" value="Rechercher"></div>
     </form>
  
-  
-  <div class="barreFiltre">
-    <div class="filtres">Filtres</div>
-    <button class="boutonFiltre">
-      <i id="imgFiltre" class="fa-solid fa-money-bill-wave"></i> Economique</button>
-    <button class="boutonFiltre">
-      <i id="imgFiltre" class="fa-solid fa-person"></i>Familiale</button>
-    <button class="boutonFiltre">
-      <i id="imgFiltre" class="fa-solid fa-heart"></i>Romantique</button>
-    <button class="boutonFiltre">
-      <i id="imgFiltre" class="fa-solid fa-fire"></i> Nos pépites</button>
-  </div>
+    <div class="barreFiltre">
+      <div class="filtres">Filtres</div>
+      <button class="boutonFiltre">
+        <i id="imgFiltre" class="fa-solid fa-money-bill-wave"></i> Economique</button>
+      <button class="boutonFiltre">
+        <i id="imgFiltre" class="fa-solid fa-person"></i>Familiale</button>
+      <button class="boutonFiltre">
+        <i id="imgFiltre" class="fa-solid fa-heart"></i>Romantique</button>
+      <button class="boutonFiltre">
+        <i id="imgFiltre" class="fa-solid fa-fire"></i> Nos pépites</button>
+    </div>
+
+    <div id="info"><i class="fa-solid fa-circle-info"></i>Plus de 500 logments sont diponibles dans cette ville</div>
+
+  </section>
 
 <!--debut du code pour les sections hebergement et populaire-->
 
@@ -119,7 +129,8 @@
                 </div>
             </a>
           </article>
-        
+
+<!--article 4 hebergement -->
         
           <article class="carteHebergement">
             <a href="#">
@@ -138,9 +149,11 @@
                     <span class="sr-only">Note de 4 sur 5</span>
                 </div>
               </div>
+            </a>
           </article>
-        </a>
-        
+
+<!--article 5 hebergement -->
+
           <article class="carteHebergement">
             <a href="#">
             <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -158,8 +171,10 @@
                     <span class="sr-only">Note de 4 sur 5</span>
                 </div>
               </div>
+            </a>
           </article>
-        </a>
+
+<!--article 6 hebergement -->
         
           <article class="carteHebergement">
             <a href="#">
@@ -178,15 +193,16 @@
                     <span class="sr-only">Note de 4 sur 5</span>
                 </div> 
               </div>
+            </a>
           </article>
-        </a>
       </div>
     </section>
               
-
+<!--article 1 Populaire -->
 
     <section id="populaire">
-      <h2 class="titreSection">Les plus populaires</h2>
+      <h2 class="titreSection">Les plus populaires <i id="graphPopulaire" class="fa-solid fa-chart-line"></i> </h2>
+      
       <div id="carteP">
           <article class="cartePopulaire">
             <a href="#">
@@ -205,8 +221,10 @@
                     <span class="sr-only">Note de 4 sur 5</span>
                 </div> 
               </div>
+            </a>
           </article>
-        </a>
+
+<!--article 2 Populaire -->
 
           <article class="cartePopulaire">
             <a href="#">
@@ -227,6 +245,8 @@
               </div>
             </a>
           </article>
+
+<!--article 3 Populaire -->
 
           <article class="cartePopulaire">
             <a href="#">
@@ -253,7 +273,7 @@
 
   </div>
 
-<!--ection Activité -->
+<!--Section Activité -->
 
   <section id="activite">
     <h2 class="titreSection">Activités à Marseille</h2>
@@ -303,20 +323,20 @@
 
   <footer>
     <div id="sectionFooter">
-      <h4>A propos</h4>
-      <div>Fonctionnement du site</div>
-      <div>Conditions générales</div>
-      <div>Données et confidentialité</div>
+      <h4 id="elementFooter"> A propos</h4>
+      <div id="elementFooter">Fonctionnement du site</div>
+      <div id="elementFooter">Conditions générales</div>
+      <div id="elementFooter">Données et confidentialité</div>
     </div>
     <div id="sectionFooter">
-      <h4>Nos hébergements</h4>
-      <div>Charte qualité</div>
-      <div>Proposer votre hotel</div>
+      <h4 id="elementFooter">Nos hébergements</h4>
+      <div id="elementFooter">Charte qualité</div>
+      <div id="elementFooter">Proposer votre hotel</div>
     </div>
     <div id="sectionFooter">
-      <h4>Assistance</h4>
-      <div>Centre d'aide</div>
-      <div>Nous contacter</div>
+      <h4 id="elementFooter">Assistance</h4>
+      <div id="elementFooter">Centre d'aide</div>
+      <div id="elementFooter">Nous contacter</div>
     </div>
   </footer>
 
