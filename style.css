@@ -1,6 +1,10 @@
 body{
     font-family: "Raleway"; /*met la police RALEWAY pour toute la page*/
-    }
+    max-width: 1440px;
+}
+
+/*début code CSS pour l'en-tête*/
+
 .navigation{
     float: right;
 }
@@ -20,14 +24,30 @@ li :link{
 
 }
 .logo{
-    width: 161.09px;
-    height: 79px;
-    padding: 30px, 50px, 30px, 50px;
-    gap: 10px;
+    width: 160px;
+    padding: 40px;
 }
-.box{
+/*fin du code de l'en-tête*/
+
+/*Début du code CSS pour la barre de recherche*/
+
+.formulaire{
     display: flex;
-    flex-direction: row;
+    margin-top: 25px;
+}
+#localisation{
+    width: 50px;
+    height: 49px;
+    border-bottom-left-radius: 15px;
+    border-top-left-radius: 15px;
+    background: #F2F2F2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#barreRecherche{
+    height: 49px;
+    border: 1px solid #F2F2F2;
     text-align: center;
 }
 #boutonRechercher{
@@ -40,39 +60,27 @@ li :link{
     background-color: #0065FC;
     color: #FFFFFF;
 }
-#localisation{
-    width: 50px;
-    height: 49px;
-    border-radius: 15px 0px 0px 15px;
-    border: 1px;
-    background: #F2F2F2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 
+/*Fin du code CSS de la barre de recherche*/
 
-}
-#barreRecherche{
-    height: 49px;
-    border: 1px solid #F2F2F2;
-    text-align: center;
-}
-.barreFiltre{ /*ensemble de la barre de filtre*/
+/*Début code CSS pour la barre de filtre*/
+
+.barreFiltre{
     display: flex;
     flex-direction: row;
     margin-top: 25px;
 }
-.filtres{ /*seulement le mot filtres*/
+.filtres{
     width: 54px;
     height: 50px;
     font-weight: bold;
     display: flex;
     align-items: center;
 }
-#imgFiltre{ /*couleur des logo economique, familiale, romantique et nos pepites*/
+.logoFiltre{
     margin-right: 5px;
 }
-.boutonFiltre{ /*les 4 boutons de la barre de filtre*/
+.boutonFiltre{
     border-radius: 25px;
     border: 2px;
     height: Fixed (50px);
@@ -87,11 +95,11 @@ li :link{
 .boutonFiltre:hover{ /* effet survol */
 background-color: #DEEBFF;
 }
-.formulaire{
-    display: flex;
-    flex-direction: row;
-    margin-top: 25px;
-}
+
+/*Fin du code CSS de la barre de filtre*/
+
+
+
 a{ /* toutes les balises <a> */
     text-decoration: none;
 }
@@ -107,87 +115,22 @@ a{ /* toutes les balises <a> */
 #titre{
     margin-bottom: 10px;
 }
+.fa-circle-info{
+    margin-right: 10px;
+}
 
 
-
+/*Début du code CSS pour les sections hébergements, populaire et activité*/
 
 .hebergementEtPopulaire{ /*section hebergement et populaire*/
     display: flex;
     justify-content: space-between;
     margin: 40px;
-
 }
-#hebergement{ /* section hebergement*/
-    background-color: #F2F2F2;
-    width: 65%;
-    border-radius: 20px;
-}
-#populaire{ /*section populaire*/
-    background-color: #F2F2F2;
-    border-radius: 20px;
-    width: 32%;
-}
-.carteP{
+.titreSection{ /*Titre des 3 sections hebergement/populaire/activité*/
+    padding: 20px;
     display: flex;
-    flex-direction: column;
     justify-content: space-between;
-}
-.carteH{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
-
-
-
-
-.carteHebergement{
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    width: 25%;
-    margin: 20px;
-    box-shadow: 0px 3px 15px 0px #0000001A;
-    padding: 5px;
-}
-.carteHebergement img{
-    width: 100%;
-    height: 100px;
-    border-top-left-radius: 20px;
-    border-top-right-radius: 20px;
-
-
-}
-.cartePopulaire{
-    background-color: #FFFFFF;
-    border-radius: 20px;
-    height : 180px;
-    margin: 20px;
-    box-shadow: 0px 3px 15px 0px #0000001A;
-    padding: 5px;
-
-
-}
-.cartePopulaire img{
-    object-fit: cover;
-    float: left;
-    height: 180px;
-    width: 40%;
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
-    margin-right: 10px;
-}
-
-
-
-
-
-
-
-.titreSection{
-padding: 20px;
-display: flex;
-justify-content: space-between;
-
 }
 .titreCarte{
     font-weight: bold;
@@ -205,7 +148,63 @@ justify-content: space-between;
     color: #0065FC;
 }
 
-#activite{
+
+#hebergement{ /* section hebergement*/
+    background-color: #F2F2F2;
+    width: 65%;
+    border-radius: 20px;
+}
+.carteH{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.carteHebergement{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    width: 25%;
+    margin: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    padding: 5px;
+}
+.carteHebergement img{
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+
+#populaire{ /*section populaire*/
+    background-color: #F2F2F2;
+    border-radius: 20px;
+    width: 32%;
+}
+.carteP{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.cartePopulaire{
+    background-color: #FFFFFF;
+    border-radius: 20px;
+    height : 180px;
+    margin: 20px;
+    box-shadow: 0px 3px 15px 0px #0000001A;
+    padding: 5px;
+}
+.cartePopulaire img{
+    object-fit: cover;
+    float: left;
+    height: 180px;
+    width: 40%;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    margin-right: 10px;
+}
+
+
+#activite{ /*Section Activité*/
     margin: 40px;
 }
 #carteA{
@@ -219,8 +218,6 @@ justify-content: space-between;
     box-shadow: 0px 3px 15px 0px #0000001A;
     height: 500px;
     border-radius: 20px;
-
-
 }
 .carteActivite img{
     width: 100%;
@@ -229,7 +226,9 @@ justify-content: space-between;
     border-top-left-radius: 20px;
 }
 
+/*Fin du code CSS pour les sections hebergement, populaire et activité*/
 
+/*Début du code CSS du pied de page*/
 
 footer{
     display: flex;
@@ -243,6 +242,29 @@ footer{
 #elementFooter{
     margin-bottom: 10px;
 }
-.fa-circle-info{
-    margin-right: 10px;
+
+/*Fin du code CSS du pied de page*/
+
+/*Début du code CSS pour les média queries*/
+
+@media screen and (min-width=1024px){ /*pour les écrans d'ordinateur*/
+    
+}
+@media screen and (max-width=1024px){ /*pour les écrans de tablette*/
+    .body{
+        background-color: red;
+    }
+    .hebergementEtPopulaire{
+        display: flex;
+        flex-direction: column;
+    }
+    #hebergement{
+        width: 100%;
+    }
+    #populaire{
+        width:100%;
+    }
+}
+@media screen and (max-width=768px) { /*pour les écrans de téléphone*/
+    
 }
