@@ -5,7 +5,9 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/responsivePhone.css">
+  <link rel="stylesheet" href="css/responsiveTablette.css">
   <script src="script.js"></script>
   <script src="https://kit.fontawesome.com/c1a6f2560a.js" crossorigin="anonymous"></script>
   <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
@@ -15,14 +17,18 @@
 <body>
 
   <header> 
-      <img class="logo" src="C:/Users/utilisateur/OneDrive/Documents/OCDevWeb/AgenceVoyageBooki/Logo/Reservia@2x.png" alt="Logo">  
-      <ul class="navigation">
-        <li><a href="#hebergement">Hébergements</a></li>
-        <li><a href="#activite">Activités</a></li>
-      </ul>
+      <img class="logo" src="Logo/Reservia@2x.png" alt="Logo"> 
+        <ul class="navigation">
+          <li>
+            <a href="#hebergement">Hébergements</a>
+          </li>
+          <li>
+            <a href="#activite">Activités</a>
+          </li>
+        </ul>
   </header>
 
-  <section id="siteAccueil">
+  <section class="siteAccueil">
 
     <div id="titreAccueil">
       <h1 id="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
@@ -30,9 +36,15 @@
     </div>
 
     <form class="formulaire">
-      <label><i id="localisation" class="fa-solid fa-location-dot "></i></label>
-      <div><input id="barreRecherche" type="search" name="search" placeholder="Marseille,France"></div>
-      <div><input id="boutonRechercher" type="submit" value="Rechercher"></div>
+      <label>
+        <i id="localisation" class="fa-solid fa-location-dot "></i>
+      </label>
+      <div>
+        <input id="barreRecherche" type="search" name="search" placeholder="Marseille,France">
+      </div>
+      <div>
+        <input id="boutonRechercher" type="submit" value="Rechercher">
+      </div>
     </form>
  
     <div class="barreFiltre">
@@ -63,7 +75,7 @@
 
 <!--article 1 hebergement-->
 
-          <article class="carteHebergement">
+          <aside class="carteHebergement">
             <a href="#">
               <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                 <div class="card-content">
@@ -81,13 +93,13 @@
                   </div>
                 </div>
             </a>
-          </article>
+          </aside>
         
 
 <!--article 2 hebergement-->
 
         
-          <article class="carteHebergement">
+          <aside class="carteHebergement">
             <a href="#">
               <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                 <div class="card-content">
@@ -105,13 +117,13 @@
                   </div>
                 </div>
             </a>
-          </article>
+          </aside>
         
 
 <!--article 3 hebergement -->
 
         
-          <article class="carteHebergement">
+          <aside class="carteHebergement">
             <a href="#">
               <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                 <div class="card-content">
@@ -129,11 +141,11 @@
                   </div>
                 </div>
             </a>
-          </article>
+          </aside>
 
 <!--article 4 hebergement -->
         
-          <article class="carteHebergement">
+          <aside class="carteHebergement">
             <a href="#">
             <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
               <div class="card-content">
@@ -151,11 +163,11 @@
                 </div>
               </div>
             </a>
-          </article>
+          </aside>
 
 <!--article 5 hebergement -->
 
-          <article class="carteHebergement">
+          <aside class="carteHebergement">
             <a href="#">
             <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
               <div class="card-content">
@@ -173,11 +185,11 @@
                 </div>
               </div>
             </a>
-          </article>
+          </aside>
 
 <!--article 6 hebergement -->
         
-          <article class="carteHebergement">
+          <aside class="carteHebergement">
             <a href="#">
             <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
               <div class="card-content">
@@ -195,7 +207,7 @@
                 </div> 
               </div>
             </a>
-          </article>
+          </aside>
       </div>
     </section>
               
@@ -205,7 +217,7 @@
       <h2 class="titreSection">Les plus populaires <i id="graphPopulaire" class="fa-solid fa-chart-line"></i> </h2>
       
       <div id="carteP">
-          <article class="cartePopulaire">
+          <aside class="cartePopulaire">
             <a href="#">
             <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
               <div class="card-content">
@@ -223,11 +235,11 @@
                 </div> 
               </div>
             </a>
-          </article>
+          </aside>
 
 <!--article 2 Populaire -->
 
-          <article class="cartePopulaire">
+          <aside class="cartePopulaire">
             <a href="#">
             <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
               <div class="card-content">
@@ -245,11 +257,11 @@
                 </div> 
               </div>
             </a>
-          </article>
+          </aside>
 
 <!--article 3 Populaire -->
 
-          <article class="cartePopulaire">
+          <aside class="cartePopulaire">
             <a href="#">
             <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
               <div class="card-content">
@@ -267,7 +279,7 @@
                 </div> 
               </div>
             </a>
-          </article>
+          </aside>
         
       </div>
     </section>
@@ -279,7 +291,7 @@
   <section id="activite">
     <h2 class="titreSection">Activités à Marseille</h2>
     <div id="carteA">
-      <article class="carteActivite">
+      <aside class="carteActivite">
         <a href="#">
         <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-port">
           <div class="card-content">
@@ -288,8 +300,8 @@
             </div>
           </div>
         </a>
-      </article>
-      <article class="carteActivite">
+      </aside>
+      <aside class="carteActivite">
         <a href="#">
         <img src="./images/activites/paul-hermann.jpg" alt="Image de la chambre d'hôtel montrant un lit">
           <div class="card-content">
@@ -298,8 +310,8 @@
             </div>
           </div>
         </a>
-      </article>
-      <article class="carteActivite">
+      </aside>
+      <aside class="carteActivite">
         <a href="#">
         <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de la chambre d'hôtel montrant un lit">
           <div class="card-content">
@@ -308,8 +320,8 @@
             </div>
           </div>
         </a>
-      </article>
-      <article class="carteActivite">
+      </aside>
+      <aside class="carteActivite">
         <a href="#">
         <img src="./images/activites/florian-wehde.jpg" alt="Image de la chambre d'hôtel montrant un lit">
           <div class="card-content">
@@ -318,7 +330,7 @@
             </div>
           </div>
         </a>
-      </article>
+      </aside>
     </div>
   </section>
 

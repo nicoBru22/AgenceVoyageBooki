@@ -106,7 +106,7 @@ a{ /* toutes les balises <a> */
 .fa-solid{
     color: #0065FC;
 }
-#siteAccueil{
+.siteAccueil{
     margin: 40px;
 }
 #info{
@@ -147,6 +147,9 @@ a{ /* toutes les balises <a> */
 .noteCarte{
     color: #0065FC;
 }
+.neutral-star{
+    color: red;
+}
 
 
 #hebergement{ /* section hebergement*/
@@ -172,6 +175,7 @@ a{ /* toutes les balises <a> */
     height: 100px;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
+    object-fit: cover;
 }
 
 
@@ -201,6 +205,7 @@ a{ /* toutes les balises <a> */
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     margin-right: 10px;
+    object-fit: cover;
 }
 
 
