@@ -18,37 +18,40 @@
 
   <header> 
       <img class="logo" src="Logo/Reservia@2x.png" alt="Logo"> 
-        <ul class="navigation">
-          <li>
-            <a href="#hebergement">Hébergements</a>
-          </li>
-          <li>
-            <a href="#activite">Activités</a>
-          </li>
+      <nav class="navigation">
+        <ul>
+            <li>
+              <a href="#hebergement">Hébergements</a>
+            </li>
+            <li>
+              <a href="#activite">Activités</a>
+            </li>
         </ul>
+      </nav>
   </header>
 
   <section class="siteAccueil">
 
-    <div id="titreAccueil">
-      <h1 id="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
+    <div class="titreAccueil">
+      <h1 class="titre">Trouvez votre hébergement pour des vacances de rêve</h1>
       <div>En plein centre ville ou en pleine nature</div>
     </div>
 
     <form class="formulaire">
       <label>
-        <i id="localisation" class="fa-solid fa-location-dot "></i>
+        <i class="localisation" class="fa-solid fa-location-dot "></i>
       </label>
       <div>
-        <input id="barreRecherche" type="search" name="search" placeholder="Marseille,France">
+        <input class="barreRecherche" type="search" name="search" placeholder="Marseille,France">
       </div>
       <div>
-        <input id="boutonRechercher" type="submit" value="Rechercher">
+        <input class="boutonRechercher" type="submit" value="Rechercher">
       </div>
     </form>
  
     <div class="barreFiltre">
       <div class="filtres">Filtres</div>
+      <div class="lesBoutonsFiltre">
       <button class="boutonFiltre">
         <i class="logoFiltre fa-solid fa-money-bill-wave"></i> Economique</button>
       <button class="boutonFiltre">
@@ -57,9 +60,10 @@
         <i class="logoFiltre fa-solid fa-heart"></i>Romantique</button>
       <button class="boutonFiltre">
         <i class="logoFiltre fa-solid fa-fire"></i> Nos pépites</button>
+      </div>
     </div>
 
-    <div id="info"><i class="fa-solid fa-circle-info"></i>Plus de 500 logments sont diponibles dans cette ville</div>
+    <div class="info"><i class="fa-solid fa-circle-info"></i>Plus de 500 logments sont diponibles dans cette ville</div>
 
   </section>
 
@@ -69,7 +73,7 @@
 
 <!--début du code pour la section hébergement-->
 
-    <section id="hebergement">
+    <section class="hebergement" id="hebergement">
       <h2 class="titreSection">Hebergement à Marseille</h2>
       <div class="carteH">
 
@@ -209,14 +213,17 @@
             </a>
           </aside>
       </div>
+      <div class="afficherPlus">Afficher plus</div>
     </section>
+
+    
               
 <!--article 1 Populaire -->
 
-    <section id="populaire">
-      <h2 class="titreSection">Les plus populaires <i id="graphPopulaire" class="fa-solid fa-chart-line"></i> </h2>
+    <section class="populaire">
+      <h2 class="titreSection">Les plus populaires <i class="graphPopulaire" class="fa-solid fa-chart-line"></i> </h2>
       
-      <div id="carteP">
+      <div class="carteP">
           <aside class="cartePopulaire">
             <a href="#">
             <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -288,9 +295,9 @@
 
 <!--Section Activité -->
 
-  <section id="activite">
+  <section class="activite" id="activite">
     <h2 class="titreSection">Activités à Marseille</h2>
-    <div id="carteA">
+    <div class="carteA">
       <aside class="carteActivite">
         <a href="#">
         <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-port">

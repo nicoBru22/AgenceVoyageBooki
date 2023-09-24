@@ -3,4 +3,50 @@
     header{
         background-color: rgb(207, 26, 65);
     }
+    .hebergementEtPopulaire{
+        display: flex;
+        flex-direction: column-reverse;
+        margin: 0px;
+    }
+    .hebergement{
+        width: 100%;
+        background-color: white;
+        border-radius: 0px;
+        padding: 20px;
+    }
+    .populaire{
+        width: 100%;
+        border-radius: 0px;
+    }
+    .navigation{
+        display: flex;
+        justify-content: space-around;
+    }
+    .navigation :hover{
+        border-bottom: solid;
+        border-color: blue;
+    }
+    .logo{
+        display: block;
+        margin: auto;
+    }
+    .boutonFiltre{
+        width: 45%;
+    }
+    .barreFiltre{
+        flex-direction: column;
+    }
+    .lesBoutonsFiltre{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .carteH{
+        display: flex;
+        flex-direction: column;
+    }
+    .carteHebergement{
+        width: 100%;
+        margin: auto;
+    }
+
 }
