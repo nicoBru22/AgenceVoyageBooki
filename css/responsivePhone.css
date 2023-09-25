@@ -1,37 +1,45 @@
 @media (max-width:768px)
 {
     header{
-        background-color: rgb(207, 26, 65);
+        flex-direction: column;
+        align-items: center;
+        padding-right: 0px;
+    }
+    .navigation{
+        display: flex;
+        width: 100%;
+    }
+    ul{
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        padding: 0px;
+    }
+    li{
+        display: flex;
+        width: 50%;
+        justify-content: center;
+        border-bottom: 1px solid grey;
+        color: black;
+    }
+    li :hover{
+        padding: 0px;
+        text-decoration: none;
+        border-top: solid;
+        border-top-color: black;
+        border-top-width: 200px;
+
     }
     .hebergementEtPopulaire{
         display: flex;
         flex-direction: column-reverse;
         margin: 0px;
     }
-    .hebergement{
-        width: 100%;
-        background-color: white;
-        border-radius: 0px;
-        padding: 20px;
-    }
+
     .populaire{
         width: 100%;
         border-radius: 0px;
-    }
-    .navigation{
-        display: flex;
-        justify-content: space-around;
-    }
-    .navigation :hover{
-        border-bottom: solid;
-        border-color: blue;
-    }
-    .logo{
-        display: block;
-        margin: auto;
-    }
-    .boutonFiltre{
-        width: 45%;
+        margin-bottom: 40px;
     }
     .barreFiltre{
         flex-direction: column;
@@ -39,14 +47,80 @@
     .lesBoutonsFiltre{
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .boutonFiltre{
+        height: 50px;
+        width: 40%;
+        margin-top: 20px;
+        padding: 0px;
+    }
+
+
+    /*Début de la Section Hebergement*/
+
+    .hebergement{
+        padding: 0px;
+        width: 100%;
+        background-color: white;
+        border-radius: 0px;
+        margin-bottom: 40px;
     }
     .carteH{
         display: flex;
         flex-direction: column;
     }
     .carteHebergement{
-        width: 100%;
-        margin: auto;
+        width: auto;
+        height: 205px;
+    }
+    .carteHebergement img{
+        height: 52%;
+    }
+    #hotelChezAminaH{
+        order: 4;
+    }
+    #hotelDeLaMerH{
+        order: ;
     }
 
+    /*Début de la section Populaire*/
+
+    #HotelSoleilDuMatinPop{
+    order: -2;
+    }
+    #aubergeCanebierePop{
+        display: none;
+    }
+
+    /*Début de la Section Activité*/
+
+    .activite{
+        margin: 10px;
+    }
+    .carteA{
+        flex-direction: column;
+    }
+    .carteActivite{
+        height: 205px;
+        margin-bottom: 20px;
+        width: auto;
+    }
+    .carteActivite img{
+        object-fit: cover;
+        width: 100%;
+        height: 70%;
+    }
+    .card-content{
+        padding: 0px 30px;
+        line-height: 10px;
+    }
+
+    /*Début de la section Footer*/
+
+    footer{
+        flex-direction: column;
+        width: 100%;
+        margin: 0px;
+    }
 }
