@@ -1,6 +1,35 @@
 @media (min-width:768px) and (max-width:1024px)
 {
     header{
-        background-color: aqua;
+        background-color: rgb(229, 115, 15);
+    }
+    .barreFiltre{
+        flex-direction: column;
+    }
+    .boutonFiltre{
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .hebergementEtPopulaire{
+        flex-direction: column;
+    }
+    .hebergement{
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    .populaire{
+        width: 100%;
+    }
+    .carteP{
+        flex-direction: row;
+    }
+    .cartePopulaire{
+        width: 27%;
+    }
+    .carteActivite{
+        height: 300px;
+    }
+    .card-content{
+        padding: 0px 20px;
     }
 }

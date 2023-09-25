@@ -8,10 +8,12 @@ body{
 header{
     display: flex;
     justify-content: space-between;
+    padding-right: 40px;
 }
 li{
     display: inline; 
     padding: 20px;
+    color: black;
 }
 li :hover{
     border-top: 2px;
@@ -35,15 +37,15 @@ li :link{
     display: flex;
     margin-top: 25px;
 }
-.localisation{
+.fa-location-dot{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
     width: 50px;
     height: 49px;
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     background: #F2F2F2;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 .barreRecherche{
     height: 49px;
@@ -51,7 +53,7 @@ li :link{
     text-align: center;
 }
 .boutonRechercher{
-    width: Hug (132px);
+    width: 132px;
     height: 49px;
     padding: 15px 16px 15px 16px;
     border-radius: 0px 15px 15px 0px;
@@ -111,6 +113,17 @@ a{ /* toutes les balises <a> */
 }
 .info{
     margin-top: 20px;
+    display: flex;
+}
+.i{
+    color: blue;
+    border: solid 1px;
+    border-color: #0065FC;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    width: 20px;
+    margin-right: 10px;
 }
 .titre{
     margin-bottom: 10px;
@@ -148,7 +161,7 @@ a{ /* toutes les balises <a> */
     color: #0065FC;
 }
 .neutral-star{
-    color: #F2F2F2;
+    color: #c7baba;
 }
 
 
@@ -253,5 +266,3 @@ footer{
 }
 
 /*Fin du code CSS du pied de page*/
-
-/*Début du code CSS pour les média queries*/
