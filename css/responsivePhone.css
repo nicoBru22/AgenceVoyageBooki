@@ -25,8 +25,9 @@
     li :hover{
         padding: 0px;
         text-decoration: none;
-        border-top: none;
-        color: blue;
+        border-top: solid;
+        border-top-color: black;
+        border-top-width: 200px;
 
     }
     .hebergementEtPopulaire{
@@ -76,7 +77,21 @@
     .carteHebergement img{
         height: 52%;
     }
+    #hotelChezAminaH{
+        order: 4;
+    }
+    #hotelDeLaMerH{
+        order: ;
+    }
 
+    /*Début de la section Populaire*/
+
+    #HotelSoleilDuMatinPop{
+    order: -2;
+    }
+    #aubergeCanebierePop{
+        display: none;
+    }
 
     /*Début de la Section Activité*/
 

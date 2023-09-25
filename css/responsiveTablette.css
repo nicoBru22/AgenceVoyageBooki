@@ -32,4 +32,11 @@
     .card-content{
         padding: 0px 20px;
     }
+    #aubergeCanebierePop{
+        display: none;
+    }
+    #hotelSoleilDuMatinPop{
+        display: block;
+        order: -2;
+    }
 }

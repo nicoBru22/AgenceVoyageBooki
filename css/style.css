@@ -27,7 +27,7 @@ li :link{
 
 }
 .logo{
-    width: 160px;
+    width: 150px;
 }
 /*fin du code de l'en-tête*/
 
@@ -104,6 +104,7 @@ background-color: #DEEBFF;
 
 a{ /* toutes les balises <a> */
     text-decoration: none;
+    color: black;
 }
 .fa-solid{
     color: #0065FC;
@@ -223,6 +224,9 @@ a{ /* toutes les balises <a> */
     border-bottom-left-radius: 20px;
     margin-right: 10px;
     object-fit: cover;
+}
+#hotelSoleilDuMatinPop{
+    display: none;
 }
 
 
