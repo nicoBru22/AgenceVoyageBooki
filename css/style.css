@@ -10,21 +10,18 @@ header{
     justify-content: space-between;
     padding-right: 40px;
 }
-li{
-    display: inline; 
-    padding: 20px;
-    color: black;
+.menu{
+    display: flex;
+    padding: 0px;
+    list-style-type: none;
+    width: 200px;
+    justify-content: space-between;
 }
-li :hover{
+.menu :hover{
     border-top: 2px;
     border-top-color: #0065FC;
     border-top-style: solid;
     color: #0065FC;
-    padding-top: 10px;
-}
-li :link{
-    text-decoration: none;
-
 }
 .logo{
     width: 150px;
@@ -46,6 +43,7 @@ li :link{
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     background: #F2F2F2;
+    color: black !important;
 }
 .barreRecherche{
     height: 49px;
@@ -61,6 +59,9 @@ li :link{
     gap: 10px;
     background-color: #0065FC;
     color: #FFFFFF;
+}
+.loupe{
+    display: none;
 }
 
 /*Fin du code CSS de la barre de recherche*/
@@ -148,11 +149,23 @@ a{ /* toutes les balises <a> */
 }
 .titreCarte{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
 }
 .card-content{
     color: black;
     padding: 10px;
+    justify-content: space-between;
+}
+.card-content-populaire{
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.card-content-hebergement{
+    height: 110px;
+    display: flex;
+    flex-direction: column;
     justify-content: space-between;
 }
 .euro{
@@ -170,6 +183,9 @@ a{ /* toutes les balises <a> */
     background-color: #F2F2F2;
     width: 65%;
     border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
 .carteH{
     display: flex;
@@ -179,8 +195,8 @@ a{ /* toutes les balises <a> */
 .carteHebergement{
     background-color: #FFFFFF;
     border-radius: 20px;
-    width: 25%;
-    margin: 20px;
+    width: 27%;
+    margin: 15px;
     box-shadow: 0px 3px 15px 0px #0000001A;
     padding: 5px;
 }
@@ -210,7 +226,7 @@ a{ /* toutes les balises <a> */
 .cartePopulaire{
     background-color: #FFFFFF;
     border-radius: 20px;
-    height : 180px;
+    height : 125px;
     margin: 20px;
     box-shadow: 0px 3px 15px 0px #0000001A;
     padding: 5px;
@@ -218,7 +234,7 @@ a{ /* toutes les balises <a> */
 .cartePopulaire img{
     object-fit: cover;
     float: left;
-    height: 180px;
+    height: 125px;
     width: 40%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
