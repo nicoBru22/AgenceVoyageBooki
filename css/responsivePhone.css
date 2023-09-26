@@ -4,11 +4,6 @@
         flex-direction: column;
         padding-right: 0px;
     }
-    .navigation{
-        display: flex;
-        width: 100%;
-        justify-content: center;
-    }
     .logo{
         width: 150px;
         display: flex;
@@ -18,21 +13,26 @@
         width: 50%;
         display: flex;
         justify-content: center;
-        border-bottom: solid;
     }
     .menu{
-        display: flex;
-        flex-direction: row;
         width: 100%;
     }
+    .menu :hover{
+        border-top: 0px;
+        border-bottom: solid;
+    }
     .menuH :hover{
-        
+        border-top: 0px;
+        border-bottom: 2px;
     }
     .menuA{
         width: 50%;
         display: flex;
         justify-content: center;
-        border-bottom: solid;
+    }
+    .menuA :hover{
+        border-top: 0px;
+        border-bottom: 2px;
     }
     .hebergementEtPopulaire{
         display: flex;
@@ -76,25 +76,37 @@
     }
     .carteHebergement{
         width: auto;
-        height: 205px;
+        height: 190px;
+        
     }
     .carteHebergement img{
         height: 52%;
     }
-    #hotelChezAminaH{
-        order: 4;
-    }
-    #hotelDeLaMerH{
-        order: ;
+    .card-content-hebergement{
+        padding-left: 10px;
+        height: 80px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
     }
 
     /*Début de la section Populaire*/
 
-    #HotelSoleilDuMatinPop{
+    #hotelSoleilDuMatinPop{
+    display: block;
     order: -2;
     }
     #aubergeCanebierePop{
         display: none;
+    }
+    .cartePopulaire{
+        height: 150px;
+    }
+    .cartePopulaire img{
+        height: 150px;
+    }
+    .card-content-populaire{
+        height: 150px;
     }
 
     /*Début de la Section Activité*/
@@ -119,6 +131,7 @@
         padding: 0px 30px;
         line-height: 10px;
     }
+
 
     /*Début de la section Footer*/
 

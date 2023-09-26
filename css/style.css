@@ -10,21 +10,18 @@ header{
     justify-content: space-between;
     padding-right: 40px;
 }
-li{
-    display: inline; 
-    padding: 20px;
-    color: black;
+.menu{
+    display: flex;
+    padding: 0px;
+    list-style-type: none;
+    width: 200px;
+    justify-content: space-between;
 }
-li :hover{
+.menu :hover{
     border-top: 2px;
     border-top-color: #0065FC;
     border-top-style: solid;
     color: #0065FC;
-    padding-top: 10px;
-}
-li :link{
-    text-decoration: none;
-
 }
 .logo{
     width: 150px;
