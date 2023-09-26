@@ -2,33 +2,37 @@
 {
     header{
         flex-direction: column;
-        align-items: center;
         padding-right: 0px;
     }
     .navigation{
         display: flex;
         width: 100%;
+        justify-content: center;
     }
-    ul{
+    .logo{
+        width: 150px;
+        display: flex;
+        align-self: center;
+    }
+    .menuH{
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        border-bottom: solid;
+    }
+    .menu{
         display: flex;
         flex-direction: row;
         width: 100%;
-        padding: 0px;
     }
-    li{
-        display: flex;
+    .menuH :hover{
+        
+    }
+    .menuA{
         width: 50%;
+        display: flex;
         justify-content: center;
-        border-bottom: 1px solid grey;
-        color: black;
-    }
-    li :hover{
-        padding: 0px;
-        text-decoration: none;
-        border-top: solid;
-        border-top-color: black;
-        border-top-width: 200px;
-
+        border-bottom: solid;
     }
     .hebergementEtPopulaire{
         display: flex;
