@@ -59,6 +59,19 @@
         margin-top: 20px;
         padding: 0px;
     }
+    .loupe{
+        display: block;
+        background-color: #0065FC;
+        width: 50px;
+        border-top-right-radius: 20px;
+        border-bottom-right-radius: 20px;
+    }
+    .fa-magnifying-glass{
+        color: white;
+    }
+    .boutonRechercher{
+        display: none;
+    }
 
 
     /*Début de la Section Hebergement*/

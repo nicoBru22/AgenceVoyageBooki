@@ -60,6 +60,9 @@ header{
     background-color: #0065FC;
     color: #FFFFFF;
 }
+.loupe{
+    display: none;
+}
 
 /*Fin du code CSS de la barre de recherche*/
 
