@@ -46,6 +46,7 @@ li :link{
     border-bottom-left-radius: 15px;
     border-top-left-radius: 15px;
     background: #F2F2F2;
+    color: black !important;
 }
 .barreRecherche{
     height: 49px;
@@ -148,7 +149,7 @@ a{ /* toutes les balises <a> */
 }
 .titreCarte{
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
 }
 .card-content{
     color: black;
